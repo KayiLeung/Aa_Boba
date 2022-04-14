@@ -1,0 +1,14 @@
+#sth{
+    margin-top: 50px;
+    color : #584827;
+    background-color: #d1cfe2;
+    z-index: 1000;
+    font-family: monospace;
+}
+
+#gameStart {
+    margin-top: 50px;
+    color : #584827;
+    background-color: #d1cfe2;
+    font-family: monospace;
+}

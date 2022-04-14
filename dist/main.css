@@ -1,0 +1,510 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.small {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 320px;
+  	margin-left: 75px;
+}
+.small:hover {
+	background-color:#bc80ea;
+}
+
+
+.medium {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 15px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 75px;
+}
+.medium:hover {
+	background-color:#c48211;
+}
+
+.large {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 75px;
+}
+.large:hover {
+	background-color:#3d6e0f;
+}
+
+.taro {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 320px;
+  	margin-left: 150px;
+}
+.taro:hover {
+	background-color:#bc80ea;
+}
+
+
+.milktea {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 12px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 150px;
+}
+.milktea:hover {
+	background-color:#c48211;
+}
+
+.matcha {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 14px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 150px;
+}
+.matcha:hover {
+	background-color:#3d6e0f;
+}
+
+#label{
+	background-color: #d1cfe2;
+	position: absolute;
+	width :100px;
+	height: 40px;
+	margin-left: 470px;
+	margin-top: 130px;
+	font-size: 28px;
+	text-align: center;
+	font-family: monospace;
+}
+
+      
+.boba {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 30px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 220px;
+}
+.boba:hover {
+	background-color:#bc80ea;
+}
+
+
+.jelly {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 30px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 220px;
+}
+.jelly:hover {
+	background-color:#c48211;
+}
+
+.eggpudding {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 13px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 220px;
+}
+.eggpudding:hover {
+	background-color:#3d6e0f;
+}
+
+      
+
+#lives {
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  position:absolute;
+  margin-top: 320px;
+  margin-left: 460px;
+}
+#orderDisplay {
+  align-self: center;
+  background-color: #FCFCFD;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: "JetBrains Mono",monospace;
+  font-size: 15px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 155px 15px;
+  border-top-right-radius: 15px 225px;
+  width: 225px;
+    height: 220px;
+  margin-top: 20px;
+   margin-left: 75px;
+}
+
+#orderDisplay{
+  margin-left: 80px;
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  color: #36395A;
+  height: 48px;
+
+  line-height: 1;
+  list-style: none;
+
+  position: absolute;
+  
+  font-family: "JetBrains Mono",monospace;
+  text-align: left;
+  text-decoration: none;
+  width: 225px;
+    height: 220px;
+}
+
+
+
+
+
+html {
+    background-color: #7ec4cf;
+}
+
+body{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    background-color: rosybrown;
+
+
+}
+
+#counter-top {
+  background-color: #94aa31;
+	position: absolute;
+	width : 700px;
+	height: 150px;
+  margin-left: 0 px;
+	margin-bottom: 0px;
+	margin-top: 295px;
+
+}
+
+#togo-window{
+  background-color: #c29810;
+  border-radius: 4px;
+  border: 2px solid rgb(158, 109, 73);
+	position: absolute;
+	width : 200px;
+	height: 40px;
+	margin-left: 420px;
+	margin-top: 260px;
+}
+
+#music{
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  
+  margin-top: 320px;
+  margin-left: 595px;
+  z-index: 900;
+
+
+}
+#reStartGame {
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  
+  margin-top: 360px;
+  margin-left: 335px;
+}
+
+
+#score {
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  
+  margin-top: 320px;
+  margin-left: 335px;
+}
+
+
+
+
+
+
+#txt {
+  background: #d1cfe2;
+  color: rgb(104, 65, 7);
+  border-bottom: 1px solid #ccc;
+  font-family: monospace ;
+  display: block;
+  width: 698px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list > li {
+  float: right;
+  border-left: 1px solid #ccc;
+}
+
+.header-list > li:hover {
+  background: #000;
+}
+#sth{
+    margin-top: 50px;
+    color : #584827;
+    background-color: #d1cfe2;
+    z-index: 1000;
+    font-family: monospace;
+}
+
+#gameStart {
+    margin-top: 50px;
+    color : #584827;
+    background-color: #d1cfe2;
+    font-family: monospace;
+}
+
+
+/*# sourceMappingURL=main.css.map*/

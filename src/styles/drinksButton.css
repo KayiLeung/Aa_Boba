@@ -1,0 +1,77 @@
+.taro {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 320px;
+  	margin-left: 150px;
+}
+.taro:hover {
+	background-color:#bc80ea;
+}
+
+
+.milktea {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 12px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 150px;
+}
+.milktea:hover {
+	background-color:#c48211;
+}
+
+.matcha {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 14px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 150px;
+}
+.matcha:hover {
+	background-color:#3d6e0f;
+}
+
+#label{
+	background-color: #d1cfe2;
+	position: absolute;
+	width :100px;
+	height: 40px;
+	margin-left: 470px;
+	margin-top: 130px;
+	font-size: 28px;
+	text-align: center;
+	font-family: monospace;
+}
+
+      

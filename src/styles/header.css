@@ -1,0 +1,25 @@
+
+
+#txt {
+  background: #d1cfe2;
+  color: rgb(104, 65, 7);
+  border-bottom: 1px solid #ccc;
+  font-family: monospace ;
+  display: block;
+  width: 698px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list > li {
+  float: right;
+  border-left: 1px solid #ccc;
+}
+
+.header-list > li:hover {
+  background: #000;
+}

@@ -1,0 +1,22 @@
+## gamelogic
+    - set cups, drinks and toppings module first
+        1. should be random
+        2. store as array
+        3. generate target order
+    - matching
+        1. selection as current order will be stored as array
+            - situation1. is matching, score +1
+            - situation2. is not matching, score unchange, heart -1
+            - situation3. time pass, score unchange, heart -1
+    -reset target order and current order
+
+    -Game over?
+        - when heart === 0
+            1. show score
+            2. show gameover
+            3. show leaderboard(if have)
+            4. restart?
+//restore data :
+const small = new CupSize(1.5, 53, 72, 63, 56, 70, 285, 292, 7, ctx)
+const medium = new CupSize(2.5, 77, 99, 88, 80, 96, 280, 290, 8.5, ctx)
+const large= new CupSize(3, 102, 134, 118, 105, 131, 270, 285, 12.5, ctx)

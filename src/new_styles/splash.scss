@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+// font-family: 'Dosis', sans-serif;
+html {
+    // background-color: #7ec4cf;
+    background-color: #dbbea1ff;
+    z-index: -1;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    z-index:99;
+    
+}
+
+
+
+// .header-nav-group{
+//     background-color: black;
+//     border-radius: 10px;
+//     display: flex;
+//     display: flex;
+//     // background: antiquewhite;
+//     justify-content: space-between;
+//     position: absolute;
+//     width: 700px;
+//     height: 100px;
+//     padding: 50px 50px 20px 50px;
+//     margin: 8%;
+//     align-items: baseline;
+
+//     // position: absolute;
+
+// }
+
+.header-nav-group{
+    // border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family:'Dosis', sans-serif ;
+}
+
+.header-list-group{
+    margin-right: 80px;
+}
+
+
+
+
+
+
