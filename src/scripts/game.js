@@ -1,9 +1,12 @@
-import {Bobas,GenerateOrder, CurrentOrder, isMatching } from "./boba_items";
+import {Bobas ,GenerateOrder, CurrentOrder, isMatching } from "./boba_items";
 import { CupSize, Boba } from "./storefront";
 import { MILKTEATYPES, CUPSIZES, TOPPING } from "./boba_items";
 function Game(ctx){
     let score = 0;
     let lives = 3;
+    let level;
+    let time;
+    let speedUp;
     let currentSelection = [null, null, null];
     let target;
     let timeOutId;
@@ -16,7 +19,9 @@ function Game(ctx){
     this.start = () => {
         score = 0;
         lives = 3;
+        speedUp = 0.9;
         running = true;
+
         oneRound();
     }
     this.stop = () => {
@@ -50,6 +55,7 @@ function Game(ctx){
             const r = isMatching(myDrink, target);
             if (r) {
                 score += 1;
+                level = (Math.floor(score / 5)) + 1;
                 oneRound();
             } else {
                 lives -= 1;
@@ -76,8 +82,12 @@ function Game(ctx){
         console.log(target);
         timeOutId = setTimeout(()=>{
             checkOrder();
-        }, 15000)
+        }, 15000 * Math.pow(speedUp, level))
     }
+
+
+
+
 
     const myCupSize = document.getElementById('cupsize')
     const myDrink = document.getElementById('drink')

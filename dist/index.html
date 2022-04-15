@@ -18,6 +18,7 @@
         <p>- If matched, you earn $5</p>
         <p>- Good Luck!</p>
         <button id='gameStart'>Game Start!</button>
+        <button id='advanceGameStart'>Advance Start!</button>
     </dialog>
 
 
@@ -45,11 +46,14 @@
     <button id ='music'>Music:On/Off</button>
     
         <div id='togo-window'>
-
+           
 
         </div>
         <div class='counter-top-wrapper'>
             <div class="counter-top-container">
+                <!-- <div id='myProgress'>
+                    <div id='myBar'></div>
+                </div> -->
                 <nav class="left-boba-btns">
                     <div id='cupsize'>
                         <button class="small">Small</button>
@@ -83,8 +87,16 @@
         </div>
     
     
-    <button id='reStartGame'>Restart!</button>
-    
+    <button id='restartGame'>Restart!</button>
+
+    <div id='myModal' class="modal"> 
+        <div class="endgame-message">
+            <span id='close'>&times;</span>
+            <div id="total-score"></div>
+            <button id='gameStart'>Chill Play!</button>
+            <button id='advanceGameStart'>Busy Play!</button>
+        </div>
+    </div>
     
     
     <canvas id="canvas"></canvas>

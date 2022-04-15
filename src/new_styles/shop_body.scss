@@ -1,12 +1,16 @@
 .shop{
     display: flex;
     justify-content: center;
-    z-index:99;
+    align-items: center;
+    z-index: 2;
+    border: 10px solid;
+    margin-top: 200px;
+    width: 700px;
     
 }
 
 .shop-boby{
-
+    border: palegoldenrod 1px solid;
     width: 700px;
     height: 500px;
     margin-top: 200px;

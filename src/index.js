@@ -1,17 +1,21 @@
 import {initCtx, CupSize, Boba} from  "./scripts/storefront.js";
 import {Game} from "./scripts/game";
-import monkeys from './Monkeys-Spinning-Monkeys.mp3'
+import { AdvanceGame} from './scripts/advance_game';
+import monkeys from './Monkeys-Spinning-Monkeys.mp3';
 import lnin from './LI-In-Bug.png'
 
 const ctx = initCtx('canvas', 700, 700);
 const g = new Game(ctx);
-const cup = new CupSize(ctx)
+const ag = new AdvanceGame(ctx);
+const cup = new CupSize(ctx);
 const playMusic = new PlayMusic(monkeys);
 
 
+
 const gameStart = document.getElementById('gameStart');
+const advanceGameStart = document.getElementById('advanceGameStart');
 const dialog = document.getElementById('sth');
-const reStart = document.getElementById('reStartGame');
+const restart = document.getElementById('restartGame');
 const audio = document.getElementById('music');
 
 gameStart.addEventListener('click' , function(e){
@@ -19,7 +23,12 @@ gameStart.addEventListener('click' , function(e){
     dialog.close();
 })
 
-reStart.addEventListener('click', function(e){
+advanceGameStart.addEventListener('click', function(e) {
+    ag.start();
+    dialog.close();
+})
+
+restart.addEventListener('click', function(e){
     g.start();
 })
 
