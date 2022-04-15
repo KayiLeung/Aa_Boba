@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+// font-family: 'Square Peg', cursive;
+#endgame_message{
+    z-index: -1;
+    font-family: 'Square Peg', cursive;
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+        padding: 20px 50px;
+    #message {
+        padding: 10px;
+
+    }
+}
+
+#id > p {
+    font-family: 'Square Peg', cursive;
+}

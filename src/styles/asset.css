@@ -2,6 +2,8 @@
 
 html {
     background-color: #7ec4cf;
+    display: flex;
+    justify-content: center;
 }
 
 body{

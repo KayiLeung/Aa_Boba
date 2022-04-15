@@ -1,6 +1,9 @@
 import { Bobas, GenerateOrder, CurrentOrder, isMatching } from "./boba_items";
 import { CupSize, Boba } from "./storefront";
 import { MILKTEATYPES, CUPSIZES, TOPPING } from "./boba_items";
+import { endgameMessage} from '../index'
+import {move} from './util'
+
 
 function AdvanceGame(ctx) {
     let score = 0;
@@ -16,8 +19,6 @@ function AdvanceGame(ctx) {
     let running = false;
     const newCup = new CupSize(ctx);
     const drawCup = new CupSize(ctx);
-    const closeDialog = document.getElementById('endGame');
-    const gameOverDialog = document.getElementById('gameOver');
     this.start = () => {
         score = 0;
         lives = 3;
@@ -30,10 +31,9 @@ function AdvanceGame(ctx) {
         running = false;
         clearTimeout(timeOutId);
         timeOutId = null;
-        endgameMessage();
-        lives = 3;
+        endgameMessage(score);
         score = 0;
-        // alert('Game Over!');
+        lives = 3;
     }
     this.getRemainingLives = () => lives;
 
@@ -91,7 +91,7 @@ function AdvanceGame(ctx) {
         // move(session, time);
         timeOutId = setTimeout(() => {
             checkOrder();
-            move(session, time);
+            // move(session, time);
         }, time)
     }
 
@@ -136,43 +136,8 @@ function AdvanceGame(ctx) {
     })
 }
 
-function move(session, time) {
-    if (session === 0 ) {
-        session = 1;
-        let timeBar = document.getElementById('mybar');
-        let width = 1;
-        let timBarId = setInterval(frame, 10);
-        
-        function frame() {
-            if (width >= time) {
-                clearInterval(id)
-                session = 0;
-            } else {
-                width++;
-                console.log(width/100)
-                timeBar.style.width = width/100 + '%';
-            }
-        }
-    }
+
     
-}
 
-function endgameMessage() {
-    document.getElementById('myModal').style.display='flex'
-    document.getElementById("total-score").innerText = `You earn ${score} today!`
-}
-
-var modal = document.getElementById('myModal')
-var span = document.getElementById('close')[0];
-
-// span.onclick = function() {
-//     modal.style.display = 'none'
-// }
-
-window.onclick = function(e) {
-    if (e.target == modal) {
-        modal.style.display = 'none'
-    }
-}
 
 export { AdvanceGame }

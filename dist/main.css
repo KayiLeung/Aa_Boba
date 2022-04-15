@@ -1,7 +1,504 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Square+Peg&display=swap);
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/sizesButton.css ***!
+  \**********************************************************************************************************/
+
+.small {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 320px;
+  	margin-left: 75px;
+}
+.small:hover {
+	background-color:#bc80ea;
+}
+
+
+.medium {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 15px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 75px;
+}
+.medium:hover {
+	background-color:#c48211;
+}
+
+.large {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 75px;
+}
+.large:hover {
+	background-color:#3d6e0f;
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/drinksButton.css ***!
+  \***********************************************************************************************************/
+.taro {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 20px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 320px;
+  	margin-left: 150px;
+}
+.taro:hover {
+	background-color:#bc80ea;
+}
+
+
+.milktea {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 12px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 150px;
+}
+.milktea:hover {
+	background-color:#c48211;
+}
+
+.matcha {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 14px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 150px;
+}
+.matcha:hover {
+	background-color:#3d6e0f;
+}
+
+#label{
+	background-color: #d1cfe2;
+	position: absolute;
+	width :100px;
+	height: 40px;
+	margin-left: 470px;
+	margin-top: 130px;
+	font-size: 28px;
+	text-align: center;
+	font-family: monospace;
+}
+
+      
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/toppingButton.css ***!
+  \************************************************************************************************************/
+.boba {
+	box-shadow: 0px 4px 0px 0px #e0b5fa;
+	background-color:#bc80ea;
+	border-radius:12px;
+	border:1px solid #dfbdfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 30px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 220px;
+}
+.boba:hover {
+	background-color:#bc80ea;
+}
+
+
+.jelly {
+	box-shadow: 0px 4px 0px 0px #e9ba69;
+	background-color:#c48211;
+	border-radius:12px;
+	border:1px solid #ebcf71;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 30px;
+	text-decoration:none;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 220px;
+}
+.jelly:hover {
+	background-color:#c48211;
+}
+
+.eggpudding {
+	box-shadow: 0px 4px 0px 0px #65d077;
+	background-color:#3d6e0f;
+	border-radius:12px;
+	border:1px solid #86c99e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 13px;
+	text-decoration:none;
+  	position: absolute;
+  	margin-top: 380px;
+  	margin-left: 220px;
+}
+.eggpudding:hover {
+	background-color:#3d6e0f;
+}
+
+      
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/remainderlives.css ***!
+  \*************************************************************************************************************/
+
+#lives {
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  position:absolute;
+  margin-top: 320px;
+  margin-left: 460px;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/orderDisplay.css ***!
+  \***********************************************************************************************************/
+#orderDisplay {
+  align-self: center;
+  background-color: #FCFCFD;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: "JetBrains Mono",monospace;
+  font-size: 15px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 155px 15px;
+  border-top-right-radius: 15px 225px;
+  width: 225px;
+    height: 220px;
+  margin-top: 20px;
+   margin-left: 75px;
+}
+
+#orderDisplay{
+  margin-left: 80px;
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  color: #36395A;
+  height: 48px;
+
+  line-height: 1;
+  list-style: none;
+
+  position: absolute;
+  
+  font-family: "JetBrains Mono",monospace;
+  text-align: left;
+  text-decoration: none;
+  width: 225px;
+    height: 220px;
+}
+
+
+
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/asset.css ***!
+  \****************************************************************************************************/
+
+
+html {
+    background-color: #7ec4cf;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    background-color: rosybrown;
+
+
+}
+
+#counter-top {
+  background-color: #94aa31;
+	position: absolute;
+	width : 700px;
+	height: 150px;
+  margin-left: 0 px;
+	margin-bottom: 0px;
+	margin-top: 295px;
+
+}
+
+#togo-window{
+  background-color: #c29810;
+  border-radius: 4px;
+  border: 2px solid rgb(158, 109, 73);
+	position: absolute;
+	width : 200px;
+	height: 40px;
+	margin-left: 420px;
+	margin-top: 260px;
+}
+
+#music{
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  
+  margin-top: 320px;
+  margin-left: 595px;
+  z-index: 900;
+
+
+}
+#restartGame {
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  
+  margin-top: 360px;
+  margin-left: 335px;
+}
+
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/scoreboard.css ***!
+  \*********************************************************************************************************/
+#score {
+  align-self: center;
+  background-color: #d1cfe2;
+  background-image: none;
+  position:absolute;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #584827;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 12px;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  
+  margin-top: 320px;
+  margin-left: 335px;
+}
+
+
+
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/header.css ***!
+  \*****************************************************************************************************/
+.header-nav-group{
+  width: 698px;
+  color: rgb(104, 65, 7);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #d1cfe2;
+  display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+
+#txt {
+  color: rgb(104, 65, 7);
+
+  font-family: monospace ;
+  display: block;
+  /* margin-left: 50px; */
+  padding: 20px 0px;
+  font-size: large;
+}
+
+
+
+.header-list > li {
+  float: right;
+  border-left: 1px solid #ccc;    
+  display: flex;
+    position: absolute;
+}
+
+.header-list > li:hover {
+  background: #000;
+}
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/styles/dialog.css ***!
+  \*****************************************************************************************************/
+#sth{
+    margin-top: 50px;
+    color : #584827;
+    background-color: #d1cfe2;
+    z-index: 1000;
+    font-family: monospace;
+}
+
+#gameStart {
+    margin-top: 50px;
+    color : #584827;
+    background-color: #d1cfe2;
+    font-family: monospace;
+}
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss (1) ***!
   \*****************************************************************************************************************************************/
@@ -59,115 +556,10 @@ table {
   border-spacing: 0;
 }
 
-.header-nav-group {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-
-#txt {
-  color: #ffffff;
-  background-color: #000000;
-  font-size: 50px;
-  font-weight: bold;
-  font-family: Arial;
-  text-transform: uppercase;
-}
-
-.neon-wrapper {
-  display: inline-flex;
-  filter: brightness(200%);
-}
-
-#txt::before {
-  content: "Aa Boba Shop";
-  position: absolute;
-  mix-blend-mode: difference;
-  filter: blur(3px);
-}
-
-.gradient {
-  background: linear-gradient(114.5793141157deg, #06e3fa 4.9270833333%, #e59740 97.84375%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: multiply;
-}
-
-.right-display {
-  border: black 1px solid;
-  padding: 3px;
-}
-
-.topDisplay {
-  border: white solid 1px;
-  padding: 3px;
-}
-.topDisplay div {
-  display: inline-flexbox;
-}
-
-html {
-  background-color: #dbbea1ff;
-  z-index: -1;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  z-index: 99;
-}
-
-.left-bobo-btns {
-  display: flex;
-}
-
-#cupsize {
-  display: flex;
-  flex-direction: column;
-}
-
-#drink {
-  display: flex;
-  flex-direction: column;
-}
-
-#toppings {
-  display: flex;
-  flex-direction: column;
-}
-
-.header-nav-group {
-  display: flex;
-  justify-content: space-evenly;
-  position: absolute;
-  width: 700px;
-  height: 200px;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-family: "Dosis", sans-serif;
-}
-
-.header-list-group {
-  margin-right: 80px;
-}
-
-#canvas {
-  position: absolute;
-  margin-top: 400px;
-}
-
 .modal {
-  display: none;
+  display: flex;
   /* Hidden by default */
+  visibility: hidden;
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -209,56 +601,18 @@ a {
   cursor: pointer;
 }
 
-#myProgress {
-  width: 100%;
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-#myBar {
-  width: 0%;
-  height: 30px;
-  background-color: #04AA6D;
-  border-radius: 5px;
-}
-
-.left-bobo-btns {
-  display: flex;
-}
-
-#cupsize {
+#endgame_message {
+  z-index: -1;
+  font-family: "Square Peg", cursive;
   display: flex;
   flex-direction: column;
+  margin-top: 180px;
+  padding: 20px 50px;
+}
+#endgame_message #message {
+  padding: 10px;
 }
 
-#drink {
-  display: flex;
-  flex-direction: column;
-}
-
-#toppings {
-  display: flex;
-  flex-direction: column;
-}
-
-.matcha {
-  box-shadow: 0px 4px 0px 0px #65d077;
-  background-color: #3d6e0f;
-  border-radius: 12px;
-  border: 1px solid #86c99e;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 8px;
-  font-weight: bold;
-  padding: 4px 14px;
-  text-decoration: none;
-  position: absolute;
-  margin-top: 380px;
-  margin-left: 150px;
-}
-
-.matcha:hover {
-  background-color: #3d6e0f;
+#id > p {
+  font-family: "Square Peg", cursive;
 }

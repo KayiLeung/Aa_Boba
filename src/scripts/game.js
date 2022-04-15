@@ -1,6 +1,9 @@
 import {Bobas ,GenerateOrder, CurrentOrder, isMatching } from "./boba_items";
 import { CupSize, Boba } from "./storefront";
 import { MILKTEATYPES, CUPSIZES, TOPPING } from "./boba_items";
+import { endgameMessage } from '../index'
+import { move } from './util'
+
 function Game(ctx){
     let score = 0;
     let lives = 3;
@@ -14,8 +17,6 @@ function Game(ctx){
     let running = false;
     const newCup = new CupSize(ctx);
     const drawCup = new CupSize(ctx);
-    const closeDialog = document.getElementById('endGame');
-    const gameOverDialog = document.getElementById('gameOver');
     this.start = () => {
         score = 0;
         lives = 3;
@@ -26,11 +27,11 @@ function Game(ctx){
     }
     this.stop = () => {
         running = false;
+        endgameMessage(score)
         clearTimeout(timeOutId);
+        score = 0;
         timeOutId = null;
         lives = 3;
-        score = 0;
-        alert('Game Over!');
     }
     this.getRemainingLives = () => lives;
 
@@ -56,6 +57,8 @@ function Game(ctx){
             if (r) {
                 score += 1;
                 level = (Math.floor(score / 5)) + 1;
+                time = 16666 * Math.pow(speedUp, level)
+                session = 0
                 oneRound();
             } else {
                 lives -= 1;
@@ -80,9 +83,11 @@ function Game(ctx){
                                                             - Drink: ${target.milkTeaType}\n
                                                             - Topping: ${target.topping}`
         console.log(target);
+         // move(session, time);
         timeOutId = setTimeout(()=>{
             checkOrder();
-        }, 15000 * Math.pow(speedUp, level))
+            // move(session, time);
+        }, time)
     }
 
 

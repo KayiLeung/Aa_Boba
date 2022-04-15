@@ -14,9 +14,11 @@ const playMusic = new PlayMusic(monkeys);
 
 const gameStart = document.getElementById('gameStart');
 const advanceGameStart = document.getElementById('advanceGameStart');
+const egmessage = document.getElementById('endgame_message')
 const dialog = document.getElementById('sth');
 const restart = document.getElementById('restartGame');
 const audio = document.getElementById('music');
+const main = document.getElementById('main-menu')
 
 gameStart.addEventListener('click' , function(e){
     g.start();
@@ -32,8 +34,42 @@ restart.addEventListener('click', function(e){
     g.start();
 })
 
+main.addEventListener('click', function(e) {
+    egmessage.style.zIndex = '-1'
+    egmessage.close();
+    dialog.open = 'true';
+})
+
+function endgameMessage(score) {
+
+    egmessage.open = 'true'
+    egmessage.style.zIndex = '1'
+    document.getElementById('message').innerText = `You made $${score * 5} today!`;
+
+}
+////modal/////
+
+// function endgameMessage(score) {
+//     document.getElementById('myModal').style.visibility='visible';
+//     document.getElementById("message").innerText = `You earn ${score} today!`;
 
 
+// }
+
+// var modal = document.getElementById('myModal')
+// var span = document.getElementById('close')[0];
+
+// // span.onclick = function() {
+// //     modal.style.display = 'none'
+// // }
+
+// window.onclick = function (e) {
+//     if (e.target == modal) {
+//         modal.style.display = 'none'
+//     }
+// }
+
+/////music//////
 function PlayMusic(soundFile) {
     const sound = new Audio(soundFile);
     sound.play();
@@ -50,8 +86,11 @@ function PlayMusic(soundFile) {
     }
 }
 
-audio.addEventListener('click', ()=>{
-    playMusic.toggle();
-})
+// audio.addEventListener('click', ()=>{
+//     playMusic.toggle();
+// })
 
 cup.draw();
+
+
+export {endgameMessage}
