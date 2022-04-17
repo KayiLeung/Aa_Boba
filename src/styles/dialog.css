@@ -1,14 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+/* // font-family: 'Square Peg', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+/* // font-family: 'Dosis', sans-serif; */
 #sth{
+    margin-top: 50px;
+    color : black;
+    background-color: white;
+    /* background-color: #d1cfe2; */
+    z-index: 1000;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 1pc;
+}
+
+#sth > p {
+    padding-bottom: 5px;
+}
+
+/* #gameStart {
     margin-top: 50px;
     color : #584827;
     background-color: #d1cfe2;
-    z-index: 1000;
-    font-family: monospace;
+    font-family:'Dosis', sans-serif;
+} */
+.start-button {
+    display: flex;
+    justify-content: space-around;
+    padding: 55px 10px 10px 10px;
+    
 }
 
 #gameStart {
-    margin-top: 50px;
-    color : #584827;
-    background-color: #d1cfe2;
-    font-family: monospace;
+    	box-shadow: 0px 4px 0px 0px #b96e6e;
+	background-color:#6e0f0f;
+	border-radius:12px;
+	border:1px solid #914a4a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	/* font-size:8px; */
+	font-weight:bold;
+	padding:4px 13px;
+	text-decoration:none;
 }
+
+#gameStart:hover {
+	background-color:#914a4a;
+}
+

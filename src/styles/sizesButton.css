@@ -14,7 +14,7 @@
 	text-decoration:none;
   	position: absolute;
   	margin-top: 320px;
-  	margin-left: 75px;
+  	margin-left: 50px;
 }
 .small:hover {
 	background-color:#bc80ea;
@@ -35,8 +35,8 @@
 	padding:4px 15px;
 	text-decoration:none;
   position: absolute;
-  margin-top: 350px;
-  margin-left: 75px;
+  margin-top: 360px;
+  margin-left: 50px;
 }
 .medium:hover {
 	background-color:#c48211;
@@ -56,8 +56,8 @@
 	padding:4px 20px;
 	text-decoration:none;
   	position: absolute;
-  	margin-top: 380px;
-  	margin-left: 75px;
+  	margin-top: 400px;
+  	margin-left: 50px;
 }
 .large:hover {
 	background-color:#3d6e0f;

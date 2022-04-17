@@ -31,7 +31,7 @@ advanceGameStart.addEventListener('click', function(e) {
 })
 
 restart.addEventListener('click', function(e){
-    g.start();
+    dialog.open = 'true';
 })
 
 main.addEventListener('click', function(e) {
@@ -86,9 +86,9 @@ function PlayMusic(soundFile) {
     }
 }
 
-// audio.addEventListener('click', ()=>{
-//     playMusic.toggle();
-// })
+audio.addEventListener('click', ()=>{
+    playMusic.toggle();
+})
 
 cup.draw();
 

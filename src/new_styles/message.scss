@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
 // font-family: 'Square Peg', cursive;
+// font-family: 'Dosis', sans-serif;
 #endgame_message{
     z-index: -1;
-    font-family: 'Square Peg', cursive;
+    font-family: 'Dosis', sans-serif;
     display: flex;
     flex-direction: column;
+    border-radius: 1pc;
     margin-top: 180px;
         padding: 20px 50px;
     #message {

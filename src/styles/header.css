@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+/* // font-family: 'Dosis', sans-serif; */
+
+
 .header-nav-group{
   width: 698px;
   color: rgb(104, 65, 7);
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  background: #d1cfe2;
+  background: #ffee93;
+  /* background: #d1cfe2; */
   display: flex;
     align-items: baseline;
     justify-content: space-around;
@@ -13,11 +18,11 @@
 #txt {
   color: rgb(104, 65, 7);
 
-  font-family: monospace ;
+  font-family: 'Dosis', sans-serif ;
   display: block;
-  /* margin-left: 50px; */
   padding: 20px 0px;
-  font-size: large;
+  font-size: 100px;
+  text-shadow: 2px 2px #c48211;
 }
 
 
