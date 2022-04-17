@@ -50,7 +50,6 @@ function Game(ctx){
     }
 
     const checkOrder = ()=> {
-        console.log(currentSelection);
         if (currentSelection.every(el => el !== null)) {
             let myDrink = CurrentOrder(currentSelection);
             const r = isMatching(myDrink, target);
@@ -82,8 +81,6 @@ function Game(ctx){
                                                             \n- Size: ${target.cupSize} \n
                                                             - Drink: ${target.milkTeaType}\n
                                                             - Topping: ${target.topping}`
-        console.log(target);
-         // move(session, time);
         timeOutId = setTimeout(()=>{
             checkOrder();
             // move(session, time);

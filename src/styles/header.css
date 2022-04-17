@@ -11,7 +11,9 @@
   /* background: #d1cfe2; */
   display: flex;
     align-items: baseline;
-    justify-content: space-around;
+        justify-content: space-around;
+    border-bottom: #ac9e9e 5px solid;
+    border-radius: 1pc;
 }
 
 

@@ -11,7 +11,6 @@ function move(session, time) {
                 session = 0;
             } else {
                 width++;
-                console.log(width / 100)
                 timeBar.style.width = width / 100 + '%';
             }
         }

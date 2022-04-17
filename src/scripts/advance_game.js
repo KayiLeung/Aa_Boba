@@ -52,7 +52,6 @@ function AdvanceGame(ctx) {
     }
 
     const checkOrder = () => {
-        console.log(currentSelection);
         if (currentSelection.every(el => el !== null)) {
             let myDrink = CurrentOrder(currentSelection);
             const r = isMatching(myDrink, target);
@@ -87,8 +86,6 @@ function AdvanceGame(ctx) {
                                                             - Topping: ${target.topping}`
         
         
-        console.log(time, (Math.pow(speedUp, level)));
-        // move(session, time);
         timeOutId = setTimeout(() => {
             checkOrder();
             // move(session, time);
