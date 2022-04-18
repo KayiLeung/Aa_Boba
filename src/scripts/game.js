@@ -80,7 +80,6 @@ function Game(ctx){
                                                             - Topping: ${target.topping}`
         level = (Math.floor(score / 5)) + 1;
         time = 16666 * Math.pow(speedUp, level)
-        console.log(time, score, speedUp)
         timeOutId = setTimeout(()=>{
             checkOrder();
         }, time)
@@ -122,9 +121,7 @@ function Game(ctx){
     }
 
     function matchCupSizesKeyPress(e) {
-        debugger
         const keyCode = e.key
-        debugger
         let size = null
         switch (keyCode) {
             case 'w':
@@ -139,8 +136,6 @@ function Game(ctx){
             default:
                 return size
         }
-        console.log(size)
-        debugger
         if (size !== null && running) {
             currentSelection[0] = size
                 checkOrder();
