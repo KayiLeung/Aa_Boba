@@ -1,13 +1,14 @@
 import {initCtx, CupSize, Boba} from  "./scripts/storefront.js";
 import {Game} from "./scripts/game";
 import { AdvanceGame} from './scripts/advance_game';
+import monkeys from '/dist/Monkeys-Spinning-Monkeys.mp3';
 
 
 const ctx = initCtx('canvas', 700, 700);
 const g = new Game(ctx);
 const ag = new AdvanceGame(ctx);
 const cup = new CupSize(ctx);
-const playMusic = new PlayMusic();
+const playMusic = new PlayMusic(monkeys);
 
 
 
@@ -30,7 +31,7 @@ advanceGameStart.addEventListener('click', function(e) {
 })
 
 restart.addEventListener('click', function(e){
-    dialog.open = 'true';
+    g.start();
 })
 
 main.addEventListener('click', function(e) {
@@ -69,8 +70,8 @@ function endgameMessage(score) {
 // }
 
 /////music//////
-function PlayMusic() {
-    const sound = new Audio('https://mstp-prod.s3.us-west-2.amazonaws.com/Monkeys-Spinning-Monkeys.mp3');
+function PlayMusic(soundFile) {
+    const sound = new Audio(soundFile);
     sound.play();
     let isPlaying = true;
 
