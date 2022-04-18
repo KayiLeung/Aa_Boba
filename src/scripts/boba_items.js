@@ -15,22 +15,22 @@ function Topping(name, color) {
 }
 
 const MILKTEATYPES ={
-    TARO: new Milktea('taro', 'purple'),
-    MILKTEA: new Milktea('milktea', '#fff'),
-    MATCHA: new Milktea('matcha', 'green')
+    TARO: new Milktea('taro', 'purple', 'e'),
+    MILKTEA: new Milktea('milktea', '#fff','d'),
+    MATCHA: new Milktea('matcha', 'green','c')
 };
 
 
 const CUPSIZES ={
-    SMALL: new CupSize('small', 's'),
-    MEDIUM: new CupSize('medium', 'm'),
-    LARGE: new CupSize('larger', 'l')
+    SMALL: new CupSize('small', 'w'),
+    MEDIUM: new CupSize('medium', 's'),
+    LARGE: new CupSize('larger', 'x')
 };
 
 const TOPPING = {
-    BOBA: new Topping('boba', 'black'),
-    JELLY: new Topping('jelly', 'white'),
-    EGGPUDDING: new Topping ('eggpudding', 'yellow')
+    BOBA: new Topping('boba', 'black','r'),
+    JELLY: new Topping('jelly', 'white','f'),
+    EGGPUDDING: new Topping ('eggpudding', 'yellow','v')
 };
 
 function Bobas(cupSize,milkTeaType, topping) {

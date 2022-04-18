@@ -55,15 +55,12 @@ function Game(ctx){
             const r = isMatching(myDrink, target);
             if (r) {
                 score += 1;
-                level = (Math.floor(score / 5)) + 1;
-                time = 16666 * Math.pow(speedUp, level)
-                session = 0
-                oneRound();
+                oneRound(score);
             } else {
                 lives -= 1;
                 clearTimeout(timeOutId);
                 timeOutId = null;
-                oneRound();
+                oneRound(score);
             }
             currentSelection = [null, null, null];
             if (lives === 0) {
@@ -75,16 +72,19 @@ function Game(ctx){
         document.getElementById('lives').innerText = `Lives remainder: ${this.getRemainingLives(lives)}`
     }
 
-    function oneRound(){        
+    function oneRound(score = 0){
         target = GenerateOrder();
         document.getElementById('orderDisplay').innerText = `NEW ORDER:\n 
                                                             \n- Size: ${target.cupSize} \n
                                                             - Drink: ${target.milkTeaType}\n
                                                             - Topping: ${target.topping}`
+        level = (Math.floor(score / 5)) + 1;
+        time = 16666 * Math.pow(speedUp, level)
+        console.log(time, score, speedUp)
         timeOutId = setTimeout(()=>{
             checkOrder();
-            // move(session, time);
         }, time)
+        
     }
 
 
@@ -95,7 +95,22 @@ function Game(ctx){
     const myDrink = document.getElementById('drink')
     const myTopping = document.getElementById('toppings')
 
-    myCupSize.addEventListener("click", function (e) {
+    // myCupSize.addEventListener("click", function (e) {
+    //     const keys = new Set(Object.keys(CUPSIZES))
+    //     if (e.target.className && running) {
+    //         if (keys.has(e.target.className.toUpperCase())) {
+    //             currentSelection[0] = e.target.className.toUpperCase();
+    //             checkOrder();
+    //             document.getElementById('label').innerText = `${currentSelection[0]}`
+    //         }
+    //     }
+    // });
+
+    myCupSize.addEventListener("click", matchCupSizes);
+    myCupSize.addEventListener('keypress', matchCupSizesKeyPress)
+
+    // myCupSize.addEventListener('')
+    function matchCupSizes(e) {
         const keys = new Set(Object.keys(CUPSIZES))
         if (e.target.className && running) {
             if (keys.has(e.target.className.toUpperCase())) {
@@ -104,7 +119,40 @@ function Game(ctx){
                 document.getElementById('label').innerText = `${currentSelection[0]}`
             }
         }
-    });
+    }
+
+    function matchCupSizesKeyPress(e) {
+        debugger
+        const keyCode = e.key
+        debugger
+        let size = null
+        switch (keyCode) {
+            case 'w':
+                size = 'SMALL';
+                break;
+            case 's':
+                size = 'MEDIUM'
+                break;
+            case 'x':
+                size = 'LARGE'
+                break;
+            default:
+                return size
+        }
+        console.log(size)
+        debugger
+        if (size !== null && running) {
+            currentSelection[0] = size
+                checkOrder();
+                document.getElementById('label').innerText = `${currentSelection[0]}`
+        }
+    }
+    
+
+
+
+
+
     myDrink.addEventListener("click", function (e) {
         const keys = new Set(Object.keys(MILKTEATYPES))
         if (e.target.className && running) {

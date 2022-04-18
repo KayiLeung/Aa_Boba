@@ -33,29 +33,10 @@ This project implements the following technologies:
 ## Link of wireframe:
 https://wireframe.cc/C9LxgE
 
+## Music Credit: Monkeys Spinning Monkeys Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+Music promoted by https://www.chosic.com/free-music/all/
 
-## Timeline
-### Friday Afternoon & Weekend
-- project set up
-    -create src folder and based artworks draw with Canvas
-        -based artworks
-            1. boba cup
-            2. at least one based drink
-            3. at least one popping
-- complete game logic
-- debug    
-### Monday
-- landing page
-    1. have title
-    2. simple background
-    3. buttons for test run
-    4. scoring display
-### Tuesday
-- complete normal mode
-- CSS for styling
-### Wednesday
-- test run
-- make different difficulty levels
-- touch up
-### Thursday Morning
-- test run
+
+

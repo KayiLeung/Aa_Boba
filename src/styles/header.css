@@ -39,3 +39,11 @@
 .header-list > li:hover {
   background: #000;
 }
+
+.info{
+  text-decoration: none;
+}
+
+.info > img{
+  color:black
+}
