@@ -1,6 +1,6 @@
 # BACKGROUND
 
-"Aa Boba" is a single-player game, which player becomes a boba shop barista called Aa Boba, players need to make boba drink from customers who ordered online.  Player has three mess up chance before the shop closed.
+"Aa Boba" is a single-player game, in which the player becomes a boba shop barista called Aa Boba. Players must make boba drinks for customers who ordered online.  The player only has three chances to make mistakes before the shop will close forever.
 
 ## [Live Here!](https://kayileung.github.io/Aa_Boba/)
 
