@@ -57,10 +57,15 @@ body{
 
   width: 145px;
   margin-top: 320px;
-  margin-left: 510px;
+  margin-left: 540px;
   z-index: 900;
+  cursor: pointer;
 
 
+}
+
+#music:hover {
+  background-color: white;
 }
 #restartGame {
   align-self: center;
@@ -78,6 +83,13 @@ body{
 
   width: 145px;
   margin-top: 380px;
-  margin-left: 510px;
+  margin-left: 540px;
+  cursor: pointer;
+
+
 }
+
+  #restartGame:hover {
+    background-color: white;
+  }
 

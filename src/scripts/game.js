@@ -55,6 +55,8 @@ function Game(ctx){
             const r = isMatching(myDrink, target);
             if (r) {
                 score += 1;
+                clearTimeout(timeOutId);
+                timeOutId = null;
                 oneRound(score);
             } else {
                 lives -= 1;
@@ -66,8 +68,21 @@ function Game(ctx){
             if (lives === 0) {
                 this.stop();
             }
-        }
+        } 
         document.getElementById('score').innerText = `Today Sales: $${this.currentScore()*5}`
+        this.getRemainingLives(lives);
+        document.getElementById('lives').innerText = `Lives remainder: ${this.getRemainingLives(lives)}`
+    }
+
+    const checkTimeOut = () =>{
+        lives -= 1;
+        clearTimeout(timeOutId);
+        timeOutId = null;
+        oneRound(score);
+        currentSelection = [null, null, null];
+        if (lives === 0) {
+            this.stop();
+        }
         this.getRemainingLives(lives);
         document.getElementById('lives').innerText = `Lives remainder: ${this.getRemainingLives(lives)}`
     }
@@ -80,9 +95,10 @@ function Game(ctx){
                                                             - Topping: ${target.topping}`
         level = (Math.floor(score / 5)) + 1;
         time = 16666 * Math.pow(speedUp, level)
+
         timeOutId = setTimeout(()=>{
-            checkOrder();
-        }, time)
+            checkTimeOut();
+        } , time)
         
     }
 
@@ -94,21 +110,16 @@ function Game(ctx){
     const myDrink = document.getElementById('drink')
     const myTopping = document.getElementById('toppings')
 
-    // myCupSize.addEventListener("click", function (e) {
-    //     const keys = new Set(Object.keys(CUPSIZES))
-    //     if (e.target.className && running) {
-    //         if (keys.has(e.target.className.toUpperCase())) {
-    //             currentSelection[0] = e.target.className.toUpperCase();
-    //             checkOrder();
-    //             document.getElementById('label').innerText = `${currentSelection[0]}`
-    //         }
-    //     }
-    // });
 
     myCupSize.addEventListener("click", matchCupSizes);
-    myCupSize.addEventListener('keypress', matchCupSizesKeyPress)
+    myDrink.addEventListener('click', matchDrinks);
+    myTopping.addEventListener('click', matchToppings);
 
-    // myCupSize.addEventListener('')
+    document.addEventListener('keypress', matchCupSizesKeyPress)    
+    document.addEventListener('keypress', matchDrinksKeyPress)    
+    document.addEventListener('keypress', matchToppingsKeyPress)    
+
+
     function matchCupSizes(e) {
         const keys = new Set(Object.keys(CUPSIZES))
         if (e.target.className && running) {
@@ -123,6 +134,7 @@ function Game(ctx){
     function matchCupSizesKeyPress(e) {
         const keyCode = e.key
         let size = null
+
         switch (keyCode) {
             case 'w':
                 size = 'SMALL';
@@ -144,11 +156,7 @@ function Game(ctx){
     }
     
 
-
-
-
-
-    myDrink.addEventListener("click", function (e) {
+    function matchDrinks(e) {
         const keys = new Set(Object.keys(MILKTEATYPES))
         if (e.target.className && running) {
             if (keys.has(e.target.className.toUpperCase())) {
@@ -157,8 +165,32 @@ function Game(ctx){
                 drawCup.draw(currentSelection[1]);
             }
         }
-    });
-    myTopping.addEventListener("click", function (e) {
+    }
+
+    function matchDrinksKeyPress(e) {
+        const keyCode = e.key
+        let drink = null
+        switch (keyCode) {
+            case 'e':
+                drink = 'TARO';
+                break;
+            case 'd':
+                drink = 'MILKTEA'
+                break;
+            case 'c':
+                drink = 'MATCHA'
+                break;
+            default:
+                return drink
+        }
+        if (drink !== null && running) {
+            currentSelection[1] = drink
+            checkOrder();
+            drawCup.draw(currentSelection[1]);
+        }
+    }
+
+    function matchToppings(e) {
         const keys = new Set(Object.keys(TOPPING))
         if (e.target.className && running) {
             if (keys.has(e.target.className.toUpperCase())) {
@@ -169,7 +201,33 @@ function Game(ctx){
                 }, 1000)
             }
         }
-    })
+    }
+
+    function matchToppingsKeyPress(e) {
+        const keyCode = e.key
+        let topping = null
+        switch (keyCode) {
+            case 'r':
+                topping = 'BOBA';
+                break;
+            case 'f':
+                topping = 'JELLY'
+                break;
+            case 'v':
+                topping = 'EDDPUDDING'
+                break;
+            default:
+                return topping
+        }
+        if (topping !== null && running) {
+            currentSelection[2] = topping
+            checkOrder();
+            displayTimeOutId = setTimeout(() => {
+                newCup.draw();
+            }, 1000)
+        }
+    }
+
 }
 
 

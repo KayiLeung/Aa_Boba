@@ -1,5 +1,6 @@
 
 .small {
+	width: 100px;
 	box-shadow: 0px 4px 0px 0px #e0b5fa;
 	background-color:#bc80ea;
 	border-radius:12px;
@@ -14,7 +15,7 @@
 	text-decoration:none;
   	position: absolute;
   	margin-top: 320px;
-  	margin-left: 50px;
+  	margin-left: 37px;
 }
 .small:hover {
 	background-color:#bc80ea;
@@ -22,6 +23,7 @@
 
 
 .medium {
+	width: 100px;
 	box-shadow: 0px 4px 0px 0px #e9ba69;
 	background-color:#c48211;
 	border-radius:12px;
@@ -36,13 +38,14 @@
 	text-decoration:none;
   position: absolute;
   margin-top: 360px;
-  margin-left: 50px;
+  margin-left: 37px;
 }
 .medium:hover {
 	background-color:#c48211;
 }
 
 .large {
+	width: 100px;
 	box-shadow: 0px 4px 0px 0px #65d077;
 	background-color:#3d6e0f;
 	border-radius:12px;
@@ -57,7 +60,7 @@
 	text-decoration:none;
   	position: absolute;
   	margin-top: 400px;
-  	margin-left: 50px;
+  	margin-left: 37px;
 }
 .large:hover {
 	background-color:#3d6e0f;
