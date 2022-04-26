@@ -4,7 +4,7 @@
 
 ## [Live Here!](https://kayileung.github.io/Aa_Boba/)
 
-![](dist/Aa_boba200.gif)
+![](dist/Aa_boba500.gif)
 
 ## Wireframes
 ![Wireframes](https://github.com/KayiLeung/Vanilla-JS/blob/main/Screen%20Shot%202022-02-10%20at%2009.34.20.png)
