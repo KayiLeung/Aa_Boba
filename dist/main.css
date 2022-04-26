@@ -498,6 +498,11 @@ body{
 
 }
 
+#favicon{
+  background-color: white;
+  color: aliceblue;
+}
+
 #counter-top {
   background-color: #94aa31;
 	position: absolute;
