@@ -31,6 +31,8 @@ advanceGameStart.addEventListener('click', function(e) {
 })
 
 restart.addEventListener('click', function(e){
+    // g.stop();
+    // ag.stop();
     dialog.open = 'true';
     // g.start();
 })

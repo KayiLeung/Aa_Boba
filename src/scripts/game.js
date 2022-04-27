@@ -22,7 +22,8 @@ function Game(ctx){
         lives = 3;
         speedUp = 0.9;
         running = true;
-
+        document.getElementById('lives').innerText = `Lives remainder: ${this.getRemainingLives(lives)}`
+        document.getElementById('score').innerText = `Today Sales: $${this.currentScore() * 5}`
         oneRound();
     }
     this.stop = () => {
